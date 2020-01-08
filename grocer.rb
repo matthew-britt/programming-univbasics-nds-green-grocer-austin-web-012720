@@ -12,7 +12,7 @@ def consolidate_cart(cart)
   i = 0 
   new_cart = []
   while i < cart.length do 
-    new_car_item = find_item_by_name_in_collection(cart[i][:item], new_cart)
+    new_cart_item = find_item_by_name_in_collection(cart[i][:item], new_cart)
     if new_cart_item
       new_cart_item[:count] += 1 
     else 
